@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title></title>
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/styles/main.css" type="text/css">
+</head>
+
+<!-- ng-app directive bootstraps/loads the angular app -->
+<body ng-app="todoListApp">
+
+  <h1>My TODOs!</h1>
+
+
+  <div class="list" ng-controller="mainCtrl">
+    <div class="add">
+
+
+      <a href="#" ng-click="addTodo()">
+        + Add a New Task</a>
+      </div>
+    <todo></todo>
+   </div>
+
+<!-- vendor bundle.js will comtain all 3rd party libraries -->
+  <script src="/scripts/vendor.bundle.js"></script>
+  <script src="/scripts/todo.bundle.js"></script>
+
+</body>
+</html>
